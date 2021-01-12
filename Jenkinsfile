@@ -7,7 +7,7 @@ pipeline {
         stage('Build Docker image'){
             steps{
                 sh "docker build . -t timmbobb/nodeapp:${DOCKER_TAG}"
-
+            }
         }
     }
 }
